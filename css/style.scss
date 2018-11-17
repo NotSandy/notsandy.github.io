@@ -14,6 +14,10 @@ $padding: 15px;
     @return map-get($colors, $color-name);
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     font-family: 'Montserrat';
     margin: 0;
@@ -220,7 +224,7 @@ body {
                 text-align: left;
                 height: fit-content;
                 align-self: center;
-                margin: 2em 10em 2em 10em;
+                margin: 2em 20em 2em 20em;
             }
 
             .resume-holder .title {
