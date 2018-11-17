@@ -1,0 +1,293 @@
+$colors: (
+    primary: #E0E9F8,
+    accent: #002750,
+    terminal: #383737,
+    text: #FAFAFA,
+    text2: #CCCCCC,
+    text3: #39879E,
+    resume: #F3F3F3,
+);
+
+$padding: 15px;
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+body {
+    font-family: 'Montserrat';
+    margin: 0;
+
+    #header {
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        background: #FAFAFA;
+        opacity: .95;
+    }
+
+    #header .name{
+        float: left;
+    }
+
+    #header h1{
+        display: inline-block;
+        vertical-align: top;
+        margin: 15px 0px 25px 50px;
+    }
+
+    #header h1 a{
+        color: color(accent);
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+    }
+
+    #header .navbar{
+        float: right;
+    }
+
+    #header .navbar .navbar-list{
+        display: inline-block;
+        vertical-align: top;
+        margin: 30px 50px 25px 0px;
+    }
+
+    #header .navbar li{
+        list-style: none;
+        float: left;
+        padding-left: 35px;
+    }
+
+    #header .navbar li a{
+        color: color(accent);
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+    }
+
+    .spacer {
+        width: 100%;
+        height: 80px;
+    }
+
+    .social {
+        width: 40px;
+        position: fixed;
+        bottom: 0px;
+        left: 40px;
+    }
+
+    .social .social-list {
+        display: flex;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        list-style: none;
+    }
+
+    .social .line {
+        display: block;
+        width: 1px;
+        height: 90px;
+        background: color(accent);
+        margin: 0px auto;
+    }
+
+    .social .social-item {
+        margin-bottom: 20px;
+        margin-left: -35px;
+        color: color(accent);
+    }
+
+    .social .social-item i {
+        color: color(accent);
+    }
+
+    main {
+        #about {
+            background: color(primary);
+            padding-top: 20px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: "info console";
+
+            .info {
+                grid-area: info;
+                text-align: left;
+                height: fit-content;
+                align-self: center;
+                margin: 10em;
+            }
+
+            .info h1{
+                font-family: 'Open Sans', sans-serif;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 16px;
+            }
+
+            .info h2{
+                font-family: 'Open Sans', sans-serif;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 68px;
+            }
+
+            .info h3{
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 400;
+                line-height: 2em;
+                font-size: 16px;
+            }
+
+            .info h3 a {
+                text-decoration: none;
+                color: color(text3);
+                font-weight: bold;
+            }
+
+            .info button {
+                background-color: color(primary);
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 400;
+                line-height: 2em;
+                font-size: 16px;
+                border: none;
+                color: color(accent);
+                border: 1px solid color(accent);
+                border-radius: 5%;
+                text-align: center;
+                text-decoration: none;
+                padding: 5px 10px;
+            }
+
+            .console{
+                background: color(text);
+                grid-area: console;
+                height: fit-content;
+                align-self: center;
+                margin: 5em 10em 10em 5em;
+                border-radius: 5px;
+                padding-top: 15px;
+            }
+
+            .console .console-info{
+                background: color(terminal);
+                height: fit-content;
+                align-self: center;
+                padding: 40px;
+            }
+
+            .console .console-info h1{
+                font-family: 'Monaco', 'Courier New';
+                font-weight: 600;
+                line-height: 1em;
+                font-size: 14px;
+                color: color(text);
+            }
+
+            .console .console-info h2{
+                font-family: 'Monaco', 'Courier New';
+                font-weight: lighter;
+                line-height: 1em;
+                font-size: 14px;
+                color: color(text2);
+            }
+
+            .console .console-info h2 a{
+                text-decoration: none;
+                color: color(text3);
+                font-weight: 900;
+            }
+        }
+
+        #resume {
+            display: grid;
+            grid-template-columns: 100% auto;
+            grid-template-areas: "resume-holder";
+            background: color(resume);
+            padding-top: 50px;
+            font-family: 'Open Sans', sans-serif;
+
+            .resume-holder {
+                grid-area: resume-holder;
+                text-align: left;
+                height: fit-content;
+                align-self: center;
+                margin: 2em 35em 2em 35em;
+            }
+
+            .resume-holder .title {
+                font-family: 'Open Sans', sans-serif;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 0.3em;
+                font-size: 16px;
+                padding-bottom: 25px;
+            }
+
+            .resume-holder .education{
+                font-family: 'Open Sans', sans-serif;
+                text-align: left;
+                text-transform: uppercase;
+                font-size: 16px;
+            }
+
+            .resume-holder .section{
+                font-family: 'Open Sans', sans-serif;
+                text-align: left;
+                text-transform: uppercase;
+                letter-spacing: 0.3em;
+                font-size: 16px;
+                padding-bottom: 25px;
+                margin-bottom: 50px;
+                border-bottom: 1px solid #CEC8C8;
+            }
+
+            .resume-holder a img.icon{
+                width: 64px;
+                height: 64px;
+                float: left;
+                margin-left: -100px;
+                margin-top: 5px;
+                border-radius: 50%;
+                opacity: 0.8;
+            }
+
+            .resume-holder .topic{
+                letter-spacing: .03em;
+                font-size: 18px;
+                line-height: 34px;
+                font-weight: bold;
+            }
+
+            .resume-holder .right{
+                float: right;
+                letter-spacing: .03em;
+                font-size: 18px;
+                line-height: 34px;
+                font-style: italic;
+            }
+
+            .resume-holder .summary{
+                font-size: 18px;
+                font-weight: lighter;
+                line-height: 34px;
+            }
+
+            .resume-holder ul{
+                font-size: 18px;
+                font-weight: lighter;
+                list-style: circle;
+                line-height: 34px;
+            }
+
+        }
+    }
+}

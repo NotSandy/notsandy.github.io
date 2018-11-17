@@ -1,0 +1,307 @@
+body {
+  font-family: 'Montserrat';
+  margin: 0;
+}
+
+body #header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  background: #FAFAFA;
+  opacity: .95;
+}
+
+body #header .name {
+  float: left;
+}
+
+body #header h1 {
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px 0px 25px 50px;
+}
+
+body #header h1 a {
+  color: #002750;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+body #header .navbar {
+  float: right;
+}
+
+body #header .navbar .navbar-list {
+  display: inline-block;
+  vertical-align: top;
+  margin: 30px 50px 25px 0px;
+}
+
+body #header .navbar li {
+  list-style: none;
+  float: left;
+  padding-left: 35px;
+}
+
+body #header .navbar li a {
+  color: #002750;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+body .spacer {
+  width: 100%;
+  height: 80px;
+}
+
+body .social {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+}
+
+body .social .social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  list-style: none;
+}
+
+body .social .line {
+  display: block;
+  width: 1px;
+  height: 90px;
+  background: #002750;
+  margin: 0px auto;
+}
+
+body .social .social-item {
+  margin-bottom: 20px;
+  margin-left: -35px;
+  color: #002750;
+}
+
+body .social .social-item i {
+  color: #002750;
+}
+
+body main #about {
+  background: #E0E9F8;
+  padding-top: 20px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% auto;
+      grid-template-columns: 50% auto;
+      grid-template-areas: "info console";
+}
+
+body main #about .info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: info;
+  text-align: left;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 10em;
+}
+
+body main #about .info h1 {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+body main #about .info h2 {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 68px;
+}
+
+body main #about .info h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 2em;
+  font-size: 16px;
+}
+
+body main #about .info h3 a {
+  text-decoration: none;
+  color: #39879E;
+  font-weight: bold;
+}
+
+body main #about .info button {
+  background-color: #E0E9F8;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 2em;
+  font-size: 16px;
+  border: none;
+  color: #002750;
+  border: 1px solid #002750;
+  border-radius: 5%;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+body main #about .console {
+  background: #FAFAFA;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: console;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 5em 10em 10em 5em;
+  border-radius: 5px;
+  padding-top: 15px;
+}
+
+body main #about .console .console-info {
+  background: #383737;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 40px;
+}
+
+body main #about .console .console-info h1 {
+  font-family: 'Monaco', 'Courier New';
+  font-weight: 600;
+  line-height: 1em;
+  font-size: 14px;
+  color: #FAFAFA;
+}
+
+body main #about .console .console-info h2 {
+  font-family: 'Monaco', 'Courier New';
+  font-weight: lighter;
+  line-height: 1em;
+  font-size: 14px;
+  color: #CCCCCC;
+}
+
+body main #about .console .console-info h2 a {
+  text-decoration: none;
+  color: #39879E;
+  font-weight: 900;
+}
+
+body main #resume {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100% auto;
+      grid-template-columns: 100% auto;
+      grid-template-areas: "resume-holder";
+  background: #F3F3F3;
+  padding-top: 50px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body main #resume .resume-holder {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: resume-holder;
+  text-align: left;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 2em 35em 2em 35em;
+}
+
+body main #resume .resume-holder .title {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 16px;
+  padding-bottom: 25px;
+}
+
+body main #resume .resume-holder .education {
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+body main #resume .resume-holder .section {
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 16px;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #CEC8C8;
+}
+
+body main #resume .resume-holder a img.icon {
+  width: 64px;
+  height: 64px;
+  float: left;
+  margin-left: -100px;
+  margin-top: 5px;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+body main #resume .resume-holder .topic {
+  letter-spacing: .03em;
+  font-size: 18px;
+  line-height: 34px;
+  font-weight: bold;
+}
+
+body main #resume .resume-holder .right {
+  float: right;
+  letter-spacing: .03em;
+  font-size: 18px;
+  line-height: 34px;
+  font-style: italic;
+}
+
+body main #resume .resume-holder .summary {
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 34px;
+}
+
+body main #resume .resume-holder ul {
+  font-size: 18px;
+  font-weight: lighter;
+  list-style: circle;
+  line-height: 34px;
+}
+/*# sourceMappingURL=style.css.map */
