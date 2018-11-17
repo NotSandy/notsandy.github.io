@@ -104,7 +104,7 @@ body .social .social-item i {
 }
 
 body main #about {
-  background: #E0E9F8;
+  background: #C6D4EE;
   padding-top: 20px;
   width: 100%;
   display: -ms-grid;
@@ -156,7 +156,7 @@ body main #about .info h3 a {
 }
 
 body main #about .info button {
-  background-color: #E0E9F8;
+  background-color: #C6D4EE;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 2em;

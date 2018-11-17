@@ -1,5 +1,5 @@
 $colors: (
-    primary: #E0E9F8,
+    primary: #C6D4EE,
     accent: #002750,
     terminal: #383737,
     text: #FAFAFA,
@@ -7,8 +7,6 @@ $colors: (
     text3: #39879E,
     resume: #F3F3F3,
 );
-
-$padding: 15px;
 
 @function color($color-name) {
     @return map-get($colors, $color-name);
