@@ -96,7 +96,6 @@ body .social .line {
 body .social .social-item {
   margin-bottom: 20px;
   margin-left: -35px;
-  color: #002750;
 }
 
 body .social .social-item i {
@@ -131,6 +130,7 @@ body main #about .info {
 body main #about .info h1 {
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
+  color: #002750;
   font-weight: 700;
   font-size: 16px;
 }
@@ -138,12 +138,14 @@ body main #about .info h1 {
 body main #about .info h2 {
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
+  color: #002750;
   font-weight: 700;
   font-size: 68px;
 }
 
 body main #about .info h3 {
   font-family: 'Open Sans', sans-serif;
+  color: #002750;
   font-weight: 400;
   line-height: 2em;
   font-size: 16px;
@@ -171,7 +173,7 @@ body main #about .info button {
 }
 
 body main #about .console {
-  background: #FAFAFA;
+  background: #FFFFFF;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: console;
@@ -225,9 +227,11 @@ body main #resume {
   -ms-grid-columns: 100% auto;
       grid-template-columns: 100% auto;
       grid-template-areas: "resume-holder";
-  background: #F3F3F3;
   padding-top: 50px;
   font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: #002750;
+  background: #F3F3F3;
 }
 
 body main #resume .resume-holder {
@@ -245,7 +249,6 @@ body main #resume .resume-holder {
 }
 
 body main #resume .resume-holder .title {
-  font-family: 'Open Sans', sans-serif;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.3em;
@@ -254,14 +257,12 @@ body main #resume .resume-holder .title {
 }
 
 body main #resume .resume-holder .education {
-  font-family: 'Open Sans', sans-serif;
   text-align: left;
   text-transform: uppercase;
   font-size: 16px;
 }
 
 body main #resume .resume-holder .section {
-  font-family: 'Open Sans', sans-serif;
   text-align: left;
   text-transform: uppercase;
   letter-spacing: 0.3em;

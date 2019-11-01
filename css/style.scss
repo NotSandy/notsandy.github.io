@@ -1,11 +1,15 @@
 $colors: (
+    header: #FAFAFA,
     primary: #C6D4EE,
     accent: #002750,
-    terminal: #383737,
-    text: #FAFAFA,
-    text2: #CCCCCC,
-    text3: #39879E,
+    console: #383737,
+    console-top: #FFFFFF,
+    text-bright: #FAFAFA,
+    text-dark: #002750,
+    text-grey: #CCCCCC,
+    text-links: #39879E,
     resume: #F3F3F3,
+    resume-line: #CEC8C8,
 );
 
 @function color($color-name) {
@@ -24,7 +28,7 @@ body {
         width: 100%;
         height: 80px;
         position: fixed;
-        background: #FAFAFA;
+        background: color(header);
         opacity: .95;
     }
 
@@ -39,7 +43,7 @@ body {
     }
 
     #header h1 a{
-        color: color(accent);
+        color: color(text-dark);
         text-decoration: none;
         font-size: 15px;
         font-weight: normal;
@@ -64,7 +68,7 @@ body {
     }
 
     #header .navbar li a{
-        color: color(accent);
+        color: color(text-dark);
         text-decoration: none;
         font-size: 15px;
         font-weight: normal;
@@ -103,7 +107,6 @@ body {
     .social .social-item {
         margin-bottom: 20px;
         margin-left: -35px;
-        color: color(accent);
     }
 
     .social .social-item i {
@@ -130,6 +133,7 @@ body {
             .info h1{
                 font-family: 'Open Sans', sans-serif;
                 text-transform: uppercase;
+                color: color(text-dark);
                 font-weight: 700;
                 font-size: 16px;
             }
@@ -137,12 +141,14 @@ body {
             .info h2{
                 font-family: 'Open Sans', sans-serif;
                 text-transform: uppercase;
+                color: color(text-dark);
                 font-weight: 700;
                 font-size: 68px;
             }
 
             .info h3{
                 font-family: 'Open Sans', sans-serif;
+                color: color(text-dark);
                 font-weight: 400;
                 line-height: 2em;
                 font-size: 16px;
@@ -150,7 +156,7 @@ body {
 
             .info h3 a {
                 text-decoration: none;
-                color: color(text3);
+                color: color(text-links);
                 font-weight: bold;
             }
 
@@ -161,7 +167,7 @@ body {
                 line-height: 2em;
                 font-size: 16px;
                 border: none;
-                color: color(accent);
+                color: color(text-dark);
                 border: 1px solid color(accent);
                 border-radius: 5%;
                 text-align: center;
@@ -170,7 +176,7 @@ body {
             }
 
             .console{
-                background: color(text);
+                background: color(console-top);
                 grid-area: console;
                 height: fit-content;
                 align-self: center;
@@ -180,7 +186,7 @@ body {
             }
 
             .console .console-info{
-                background: color(terminal);
+                background: color(console);
                 height: fit-content;
                 align-self: center;
                 padding: 40px;
@@ -191,7 +197,7 @@ body {
                 font-weight: 600;
                 line-height: 1em;
                 font-size: 14px;
-                color: color(text);
+                color: color(text-bright);
             }
 
             .console .console-info h2{
@@ -199,12 +205,12 @@ body {
                 font-weight: lighter;
                 line-height: 1em;
                 font-size: 14px;
-                color: color(text2);
+                color: color(text-grey);
             }
 
             .console .console-info h2 a{
                 text-decoration: none;
-                color: color(text3);
+                color: color(text-links);
                 font-weight: 900;
             }
         }
@@ -213,9 +219,11 @@ body {
             display: grid;
             grid-template-columns: 100% auto;
             grid-template-areas: "resume-holder";
-            background: color(resume);
             padding-top: 50px;
             font-family: 'Open Sans', sans-serif;
+            text-decoration: none;
+            color: color(text-dark);
+            background: color(resume);
 
             .resume-holder {
                 grid-area: resume-holder;
@@ -226,7 +234,6 @@ body {
             }
 
             .resume-holder .title {
-                font-family: 'Open Sans', sans-serif;
                 text-align: center;
                 text-transform: uppercase;
                 letter-spacing: 0.3em;
@@ -234,22 +241,20 @@ body {
                 padding-bottom: 25px;
             }
 
-            .resume-holder .education{
-                font-family: 'Open Sans', sans-serif;
+            .resume-holder .education {
                 text-align: left;
                 text-transform: uppercase;
                 font-size: 16px;
             }
 
             .resume-holder .section{
-                font-family: 'Open Sans', sans-serif;
                 text-align: left;
                 text-transform: uppercase;
                 letter-spacing: 0.3em;
                 font-size: 16px;
                 padding-bottom: 25px;
                 margin-bottom: 50px;
-                border-bottom: 1px solid #CEC8C8;
+                border-bottom: 1px solid color(resume-line);
             }
 
             .resume-holder a img.icon{
